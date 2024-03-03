@@ -71,6 +71,6 @@ included-patches = "'Add splash animation' 'Disable landscape mode' 'Hide animat
 excluded-patches = "'Custom branding name YouTube'"
 build-mode = "module"
 #arch = "arm64-v8a"
-version = " 19.05.36"
+version = "19.05.36"
 #apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
