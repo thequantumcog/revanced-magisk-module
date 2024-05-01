@@ -18,3 +18,10 @@ included-patches = "'Custom branding heading' 'MaterialYou' 'Settings icons'"
 excluded-patches = "'Custom branding name YouTube' 'Enable debug logging' 'Translations'"
 version = "19.16.38"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+[X]
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+patches-source = "crimera/piko"
+integrations-source = "crimera/revanced-integrations"
+rv-brand = "Piko"
+included-patches = "'Disable chirp font' 'Hide Community Notes' 'Hide FAB' 'Hide Banner' 'Hide Live Threads' 'Custom sharing domain'"
+build-mode = "apk
