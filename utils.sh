@@ -64,7 +64,7 @@ get_rv_prebuilts() {
 		file="${dir}/${name}"
 		[ -f "$file" ] || REBUILD=true
 
-		echo "$tag: $(cut -d/ -f5 <<<"$url")/${name}  " >>"$dir/changelog.md"
+		echo "> ⚙️ » $tag: \`$(cut -d/ -f5 <<<"$url")/${name}\`  " >>"$dir/changelog.md"
 		gh_dl "$file" "$url" >&2 || return 1
 		echo -n "$file "
 		if [ "$tag" = "Patches" ]; then
@@ -75,7 +75,7 @@ get_rv_prebuilts() {
 			url=$(jq -e -r '.assets[] | select(.name | endswith("json")) | .url' <<<"$resp") || return 1
 			gh_dl "$file" "$url" >&2 || return 1
 			echo -n "$file "
-			echo -e "[Changelog](https://github.com/${src}/releases/tag/${tag_name})\n" >>"$dir/changelog.md"
+			echo -e "> [🔗 » Changelog](https://github.com/${src}/releases/tag/${tag_name})\n" >>"$dir/changelog.md"
 		fi
 	done
 	echo
@@ -303,7 +303,7 @@ get_archive_pkg_name() { echo "$__ARCHIVE_PKG_NAME__"; }
 patch_apk() {
 	local stock_input=$1 patched_apk=$2 patcher_args=$3 rv_cli_jar=$4 rv_patches_jar=$5
 	local cmd="java -jar $rv_cli_jar patch $stock_input -p -o $patched_apk -b $rv_patches_jar  $patcher_args --keystore=ks.keystore \
---keystore-entry-password=123456789 --keystore-password=123456789 --keystore-entry-alias=jhc --signer=jhc --options=options.json"
+--keystore-entry-password=123456789 --keystore-password=123456789 --signer=jhc --keystore-entry-alias=jhc --options=options.json"
 	if [ "$OS" = Android ]; then cmd+=" --custom-aapt2-binary=${AAPT2}"; fi
 	pr "$cmd"
 	eval "$cmd"
@@ -390,7 +390,7 @@ build_rv() {
 	if ! check_sig "$stock_apk" "$pkg_name"; then
 		abort "apk signature mismatch '$stock_apk'"
 	fi
-	log "${table}: ${version}"
+	log "🟢 » ${table}: \`${version}\`"
 
 	p_patcher_args+=("-m ${args[integ]}")
 	local microg_patch
