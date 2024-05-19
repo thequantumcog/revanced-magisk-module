@@ -6,17 +6,29 @@ enable-magisk-update = true   # set this to false if you do not want to receive 
 # you can use rvmm-config-gen to generate a config
 
 
-[YouTube-Extended]
+[YouTube-Extended-anddea]
 enabled = "true"
 app-name = "YouTube"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
 rv-brand = "ReVanced Extended"
+cli-source = "inotia00/revanced-cli"
 build-mode = "module"
 included-patches = "'Custom branding heading' 'MaterialYou' 'Settings icons'"
 excluded-patches = "'Custom branding name YouTube' 'Enable debug logging' 'Translations'"
-version = "19.16.38"
+version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+[YouTube-Extended]
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+included-patches = "'MaterialYou'"
+excluded-patches = "'Theme'"
+version = "auto"
+build-mode = "both"
+app-name = "YouTube"
 [X]
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 patches-source = "crimera/piko"
