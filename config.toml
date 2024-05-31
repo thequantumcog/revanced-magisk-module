@@ -19,7 +19,7 @@ excluded-patches = "'Custom branding name YouTube' 'Enable debug logging' 'Trans
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 [YouTube-Extended]
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
@@ -30,7 +30,7 @@ version = "auto"
 build-mode = "module"
 app-name = "YouTube"
 [YouTube-Extended-rufusin]
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 patches-source = "rufusin/revanced-patches"
 integrations-source = "rufusin/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
