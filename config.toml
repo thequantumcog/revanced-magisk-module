@@ -4,39 +4,14 @@ enable-magisk-update = true   # set this to false if you do not want to receive 
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 # you can use rvmm-config-gen to generate a config
-
-
-[YouTube-Extended-anddea]
-enabled = "true"
-app-name = "YouTube"
-patches-source = "anddea/revanced-patches"
-integrations-source = "anddea/revanced-integrations"
-rv-brand = "ReVanced Anddea"
-cli-source = "inotia00/revanced-cli"
-build-mode = "module"
-included-patches = "'Custom branding heading' 'MaterialYou' 'Settings icons'"
-excluded-patches = "'Custom branding name YouTube' 'Enable debug logging' 'Translations'"
-version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 [YouTube-Extended]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
-included-patches = "'MaterialYou'"
+included-patches = "'MaterialYou' 'Visual preferences icons'"
 excluded-patches = "'Custom branding name YouTube' 'Enable debug logging' 'Translations'"
-version = "auto"
-build-mode = "module"
-app-name = "YouTube"
-[YouTube-Extended-rufusin]
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-patches-source = "rufusin/revanced-patches"
-integrations-source = "rufusin/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Rufusin"
-included-patches = "'MaterialYou'"
-excluded-patches = "'Custom branding name YouTube' 'Enable debug logging' 'Translations' 'Custom package name' 'Custom branding icon'"
 version = "auto"
 build-mode = "module"
 app-name = "YouTube"
@@ -45,5 +20,5 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 patches-source = "crimera/piko"
 integrations-source = "crimera/revanced-integrations"
 rv-brand = "Piko"
-included-patches = "'Disable chirp font' 'Hide Community Notes' 'Hide FAB' 'Hide Banner' 'Hide Live Threads' 'Custom sharing domain' 'Force enable translate' 'Customize Navigation Bar items' 'Customize profile tabs' 'Bring back twitter'"
+included-patches = "'Disable chirp font' 'Hide Community Notes' 'Hide FAB' 'Hide Banner' 'Hide Live Threads' 'Custom sharing domain' 'Force enable translate' 'Customize Navigation Bar items' 'Customize profile tabs' 'Delete from database' 'Bring back twitter'"
 build-mode = "apk
