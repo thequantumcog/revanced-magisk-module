@@ -17,7 +17,7 @@ build-mode = "module"
 app-name = "YouTube"
 [YouTube-Extended-6-7]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-patches-source = "kitadai31/revanced-patches"
+patches-source = "kitadai31/revanced-patches-android6-7"
 integrations-source = "kitadai31/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
