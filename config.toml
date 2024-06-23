@@ -24,7 +24,7 @@ rv-brand = "ReVanced Extended"
 included-patches = "'MaterialYou'"
 excluded-patches = "'Custom branding name YouTube' 'Enable debug logging' 'Translations'"
 version = "17.34.36"
-build-mode = "both"
+build-mode = "apk"
 app-name = "YouTube"
 
 [X]
@@ -33,4 +33,4 @@ patches-source = "crimera/piko"
 integrations-source = "crimera/revanced-integrations"
 rv-brand = "Piko"
 included-patches = "'Disable chirp font' 'Hide Community Notes' 'Hide FAB' 'Hide Banner' 'Hide Live Threads' 'Custom sharing domain' 'Force enable translate' 'Customize Navigation Bar items' 'Customize profile tabs' 'Delete from database' 'Bring back twitter'"
-build-mode = "apk
+build-mode = "apk"
