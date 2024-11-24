@@ -12,7 +12,7 @@ cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 included-patches = "'MaterialYou' 'Visual preferences icons'"
 excluded-patches = "'Custom branding name for YouTube' 'Custom branding icon for YouTube' 'Enable debug logging' 'Custom package name' 'Translations'"
-version = "auto"
+version = "19.43.41"
 build-mode = "both"
 app-name = "YouTube"
 [YouTube-Extended-6-7]
