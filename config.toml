@@ -12,36 +12,9 @@ included-patches = "'MaterialYou' 'Return YouTube Username'"
 patcher-args = "--legacy-options=options.json"
 build-mode = "both"
 
-[Music]
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
-patches-source = "inotia00/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-included-patches = "'Return YouTube Username'"
-patcher-args = "--legacy-options=options.json"
-build-mode = "both"
-arch = "both"
-
-[Reddit]
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
-patches-source = "inotia00/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-version = "2024.29.0"
 
 [X]
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 apkmirror-dpi = "120-640dpi"
 
-[TikTok]
-uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
-# apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
-included-patches = "'SIM spoof'"
-
-[Duolingo]
-uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/duolingo/duolingo-duolingo"
-apkmirror-dpi = "120-640dpi"
