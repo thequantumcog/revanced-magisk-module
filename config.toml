@@ -9,9 +9,22 @@ patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 included-patches = "'MaterialYou' 'Return YouTube Username'"
+excluded-patches = "'Custom branding name for YouTube' 'Custom branding icon for YouTube' 'Enable debug logging' 'Custom package name' 'Translations'"
 patcher-args = "--legacy-options=options.json"
 build-mode = "both"
 
+[YouTube-Extended-6-7]
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+patches-source = "kitadai31/revanced-patches-android6-7"
+integrations-source = "kitadai31/revanced-integrations"
+cli-source = "kitadai31/rvcli"
+rv-brand = "ReVanced Android 6-7"
+included-patches = "'MaterialYou'"
+excluded-patches = "'Custom branding name YouTube' 'Enable debug logging' 'Translations'"
+patcher-args = "--legacy-options=options.json"
+version = "17.34.36"
+build-mode = "apk"
+app-name = "YouTube"
 
 [X]
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
