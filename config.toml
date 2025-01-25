@@ -30,4 +30,5 @@ build-mode = "both"
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 apkmirror-dpi = "120-640dpi"
+#version = "2025.03.0"
 
