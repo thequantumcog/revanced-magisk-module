@@ -1,4 +1,5 @@
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
+enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
+parallel-jobs = 1
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
@@ -6,16 +7,17 @@ enable-magisk-update = true   # set this to false if you do not want to receive 
 # you can use rvmm-config-gen to generate a config
 [YouTube-Extended]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+app-name = "YouTube"
 patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 included-patches = "'MaterialYou' 'Visual preferences icons'"
 excluded-patches = "'Custom branding name for YouTube' 'Custom branding icon for YouTube' 'Enable debug logging' 'Custom package name' 'Translations'"
-version = "19.43.41"
+#version = "auto"
 build-mode = "both"
-app-name = "YouTube"
+
 [YouTube-Extended-6-7]
+enabled=false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 patches-source = "kitadai31/revanced-patches-android6-7"
 integrations-source = "kitadai31/revanced-integrations"
