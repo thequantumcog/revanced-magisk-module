@@ -26,7 +26,8 @@ build-mode = "both"
 # build-mode = "apk"
 # app-name = "YouTube"
 
-[X]
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
-apkmirror-dpi = "120-640dpi"
+# Use Crimera Apks instead
+# [X]
+# uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+# apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
+# apkmirror-dpi = "120-640dpi"
