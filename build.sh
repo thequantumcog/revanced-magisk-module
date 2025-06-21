@@ -10,6 +10,11 @@ if [ "${1-}" = "clean" ]; then
 fi
 
 source utils.sh
+
+jq --version >/dev/null || abort "\`jq\` is not installed. install it with 'apt install jq' or equivalent"
+java --version >/dev/null || abort "\`openjdk 17\` is not installed. install it with 'apt install openjdk-17-jre' or equivalent"
+zip --version >/dev/null || abort "\`zip\` is not installed. install it with 'apt install zip' or equivalent"
+
 set_prebuilts
 
 vtf() { if ! isoneof "${1}" "true" "false"; then abort "ERROR: '${1}' is not a valid option for '${2}': only true or false is allowed"; fi; }
@@ -164,8 +169,7 @@ wait
 rm -rf temp/tmp.*
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
 
-log "\n- ▶️ » Install [GmsCore](https://github.com/ReVanced/GmsCore/releases) or [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube and YT Music APKs"
-log "- 🛑 » Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) module to detach patched apps from being updated by Play Store\n"
+log "\n- ▶️ » Install [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube and YT Music APKs\n"
 log "$(cat "$TEMP_DIR"/*-rv/changelog.md)"
 
 SKIPPED=$(cat "$TEMP_DIR"/skipped 2>/dev/null || :)
