@@ -2,7 +2,7 @@ enable-magisk-update = true
 parallel-jobs = 1
 compression-level = 9
 
-[YouTube]
+[YouTube-Inotia00]
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 patches-source = "anddea/revanced-patches"
